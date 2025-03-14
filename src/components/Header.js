@@ -7,6 +7,7 @@ import { addUser, removeuser } from '../utils/userSlice';
 import { onAuthStateChanged } from 'firebase/auth';
 import { useDispatch } from 'react-redux';
 import { LOGO, USER_AVATAR } from '../utils/constants'
+import { toggleGptSearchView } from '../utils/gptSlice'
 
 const Header = () => {
   const navigate = useNavigate();
@@ -38,6 +39,10 @@ const Header = () => {
       navigate("/")
     })
   }
+
+  const  handleGptSearchView = () => {
+    dispatch(toggleGptSearchView());
+  }
   return (
     <div className='absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between'>
       <img className='w-44'
@@ -45,6 +50,12 @@ const Header = () => {
           alt='logo'
       />
       <div className='flex align-middle p-2 '>
+        <button
+          className='py-2 px-4 mx-4 my-2 bg-red-600 rounded-lg text-white'
+          onClick={handleGptSearchView}
+        >
+            GPT Search
+          </button>
         <img className='w-7 h-7'
           src={USER_AVATAR}
           alt='user-icon'
