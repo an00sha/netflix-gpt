@@ -68,3 +68,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### Hosted website
+https://netflix-gpt-422d7.web.app
+
+## read access token
+eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmOTNjNzdmNzE4Njc0MmEzZTFiNjM4ZmVhYTZlNDQ5OSIsIm5iZiI6MTc0MTQzNDgwOC4wMSwic3ViIjoiNjdjYzJmYjg0MmM3NTIxMjUyZjVhOGZlIiwic2NvcGVzIjpbImFwaV9yZWFkIl0sInZlcnNpb24iOjF9.jgAZaUaE5W0ryl2RxUj-L5gEMTCaDjc-lNP4CID-BGM
+
+### api key
+f93c77f7186742a3e1b638feaa6e4499
