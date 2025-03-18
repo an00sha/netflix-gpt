@@ -6,7 +6,7 @@ export const API_OPTIONS = {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmOTNjNzdmNzE4Njc0MmEzZTFiNjM4ZmVhYTZlNDQ5OSIsIm5iZiI6MTc0MTQzNDgwOC4wMSwic3ViIjoiNjdjYzJmYjg0MmM3NTIxMjUyZjVhOGZlIiwic2NvcGVzIjpbImFwaV9yZWFkIl0sInZlcnNpb24iOjF9.jgAZaUaE5W0ryl2RxUj-L5gEMTCaDjc-lNP4CID-BGM'
+      Authorization: 'Bearer' + process.env.REACT_APP_TMDB_KEY
     }
   };
 
@@ -19,3 +19,10 @@ export const SUPPORTED_LANGUAGES = [
   {identifier: "hindi", name: "Hindi"},
   {identifier: "spanish", name: "Spanish"}
 ]
+
+// Don't store secret keys like this, store in .env file and add prefix REACT_APP, so that react will recognize
+// those keys and won't add it in bundle, if it got included in bundle, hackers could easily get that key
+// add .env in git ignore too
+// export const OPENAI_KEY = "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"
+
+export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY

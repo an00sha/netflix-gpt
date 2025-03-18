@@ -43,7 +43,6 @@ const Header = () => {
   }
 
   const  handleGptSearchView = () => {
-    console.log("clicked")
     dispatch(toggleGptSearchView());
   }
 
