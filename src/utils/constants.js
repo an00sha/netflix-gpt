@@ -23,6 +23,5 @@ export const SUPPORTED_LANGUAGES = [
 // Don't store secret keys like this, store in .env file and add prefix REACT_APP, so that react will recognize
 // those keys and won't add it in bundle, if it got included in bundle, hackers could easily get that key
 // add .env in git ignore too
-// export const OPENAI_KEY = "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"
 
 export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY
