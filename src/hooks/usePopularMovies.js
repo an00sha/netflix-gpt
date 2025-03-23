@@ -16,7 +16,8 @@ const usePopularMovies = () => {
 
     useEffect(() => {
         // if data is already present in store, don't make unnecessary api calls
-        // this is called as memoization
+        // this is called as memoization, 
+        //useMemo will cache the result of a calculation b/w re-renders
         !popularMovies && getPopularMovies();
     }, [])
 }
